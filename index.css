@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Young Serif', serif;
+  background:hsl(30, 54%, 90%);
+  /* color: var(--text-color); */
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+}
+@media (max-width: 376px){
+  body{
+    background: hsl(0, 0%, 100%);
+  }
+}
+
+.container {
+  background:hsl(0, 0%, 100%);
+  width:34rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 8rem;
+  font-size: 14px;
+  overflow: visible;
+}
+@media (max-width: 376px){
+  .container {
+    width:auto;
+    border-radius: 0.0001rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+  
+.centered-image {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 0.5rem;
+}
+@media (max-width: 376px){
+  .centered-image{
+    width: calc(100% + 64px); 
+    margin: -32px -32px 32px -32px;
+    border-radius: 0.001rem;
+    display: block;
+    max-width: none; 
+  }
+}
+
+.summary {
+  .summary-title {
+    font-size: 36px;
+    margin: 20px 0px;
+    p {
+      padding: 6px 0px;
+      font-size: 14px;
+    }
+  }
+
+  .summary-time{
+    background:hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 1rem;
+    h2{
+      color: hsl(332, 51%, 32%);
+    }
+    li{
+      padding:6px;
+    }
+    li::marker{
+      color:hsl(332, 51%, 32%)};
+  }
+  
+}
+
+.Ingredients, .Instructions, .Nutrition{
+  h2{
+    margin: 25px 0px 0px 0px;
+    font-size: 28px;
+    color: hsl(332, 51%, 32%);
+  }
+  ul, ol{
+    padding:20px;
+    margin: 0px;
+    ol, li{
+      padding:6px 15px;
+      line-height: 25px;
+    }
+    ol, li::marker{
+      color:hsl(332, 51%, 32%)};
+  }
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders don't double up */
+  .data{
+    color:hsl(332, 51%, 32%);
+  }
+  th, td {
+    border-bottom: 1px solid hsl(30, 18%, 87%); /* Adds horizontal lines */
+    padding: 8px 20px;
+    text-align: left;
+  }
+}
