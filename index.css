@@ -9,7 +9,7 @@ body {
   display:flex;
   flex-direction: column;
 }
-@media (max-width: 431px){
+@media (max-width: 500px){
   body{
     background: hsl(0, 0%, 100%);
   }
@@ -24,7 +24,7 @@ body {
   font-size: 14px;
   overflow: visible;
 }
-@media (max-width: 431px){
+@media (max-width: 500px){
   .container {
     width:auto;
     border-radius: 0.0001rem;
@@ -39,7 +39,7 @@ body {
   height: auto; 
   border-radius: 0.5rem;
 }
-@media (max-width: 431px){
+@media (max-width: 500px){
   .centered-image{
     width: calc(100% + 64px); 
     margin: -32px -32px 32px -32px;
