@@ -1,3 +1,7 @@
+:root {
+  --primary-color: hsl(332, 51%, 32%);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,15 +27,14 @@ body {
   width:50%;
   border-radius: 2rem;
   padding: 2rem;
-  margin: 8rem;
+  margin: 0 0 8vh 0;
   font-size: 0.75rem;
 }
 @media (max-width: 431px){
   .containerMain {
     width:auto;
     border-radius: 0;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 5vh 5vw;
   }
 }
 
@@ -43,8 +46,8 @@ body {
 }
 @media (max-width: 431px){
   .centered-image{
-    width: calc(100% + 4rem); 
-    margin: -2rem -2rem 2rem -2rem;
+    width: 111%; 
+    margin: -5vh -5vw 5vh -5vw;
     border-radius: 0;
     display: block;
     max-width: none; 
@@ -59,7 +62,6 @@ body {
   padding: 0.5rem 0;
   font-size: 1rem;
 }
-
 .summary-time{
   background:hsl(330, 100%, 98%);
   padding: 1rem;
@@ -67,7 +69,7 @@ body {
 }
 .summary-time h2{
   margin: 1rem 0 0 0;
-  color: hsl(332, 51%, 32%);
+  color: var(--primary-color);
   }
 .summary-time li{
   padding:0.5rem 1rem;
@@ -84,28 +86,27 @@ li {
 }
 li::marker{
   font-weight:bold;
-  color:hsl(332, 51%, 32%);
+  color:var(--primary-color);
 }
-  
 .Ingredients h2, .Instructions h2, .Nutrition h2{
   margin: 1.5rem 0 0 0;
   font-size: 2rem;
-  color: hsl(332, 51%, 32%);
+  color: var(--primary-color);
 }
-
 .Ingredients, .Instructions, .Nutrition{
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
-    
+
+
 .table {
   width: 100%;
   border-collapse: collapse; /* Ensures borders don't double up */
-  .data{
-    color:hsl(332, 51%, 32%);
-  }
   th, td {
     border-bottom: 1px solid hsl(30, 18%, 87%); /* Adds horizontal lines */
     padding: 0.5rem 1.25rem;
     text-align: left;
   }
+}
+.data{
+  color:var(--primary-color);
 }
